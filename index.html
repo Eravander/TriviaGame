@@ -14,23 +14,37 @@
   
   
   <!-- start screen -->
-  <div class="container" id="start-screen">
-
+  <div class = "container" id = "start-screen">
+    <button class = 'btn btn-primary' id = 'startBtn'>Start</button>
   </div>
 
 
   <!-- questions -->
-  <div class="container" id="quiz">
-  
+  <div class = "container" id="quiz">
+    <div id = timeLeft></div>
+    <div id = currentQuestion></div>
+    <div class = 'question'></div>
+    <div class = 'answerList'></div>
+    </div>
+
+    <!-- after answer -->
+    <div class = "container" id = "answered">
+      <div id = message></div>
+        <div id = correctedAnswer></div>
+        <div id = gif></div>
     </div>
 
 
     <!-- results -->
     <div class="container" id="results">
-
+      <div id = finalMessage></div>
+      <div id = totalCorrect></div>
+      <div id = totalIncorrect></div>
+      <div id = unanswered></div>
+      <div id ='startOverBtn'></div>
       </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/javascript/app.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src = "assets/javascript/app.js"></script>
 </body>
 </html>
