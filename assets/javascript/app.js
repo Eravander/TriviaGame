@@ -121,6 +121,7 @@ function answerPage() {
         answered = true;
     }
 
+    //checks if all questions have been answered then either displays final score or sets activeQuestion to next question
     if (activeQuestion === (questions.length - 1)) {
         setTimeout(scoreboard, 5000)
     } else {
