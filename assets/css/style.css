@@ -1,0 +1,39 @@
+body{
+	background: url('images/craft-beer-background.jpg');
+    font-size: 25px;
+    color: antiquewhite;
+}
+
+header{
+    text-align: center;
+	margin-bottom: 20px;
+}
+
+.btn-primary,.reset{
+	background-color: #313477;
+	color: white;
+	font-family: 'Sigmar One', sans-serif;
+	font-size: 30px;
+	padding: 20px;
+	margin-top: 100px;
+}
+.btn-primary:hover, .reset:hover{
+	background-color: #202364;
+}
+
+.container{
+	margin-top: 50px;
+	text-align: center;
+	height: 100%;
+	width: 700px;
+}
+
+#question{
+    background-color: black;
+}
+
+.thisChoice:hover{
+	background-color: #202364;
+	color: white;
+	padding: 10px;
+}

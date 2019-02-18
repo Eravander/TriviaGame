@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Trivia Game</title>
   <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
-        integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+    integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  
-  
+<header>
+  Test Your Beer Knowledge
+</header>
+
   <!-- start screen -->
-  <div class = "container" id = "start-screen">
-    <button class = 'btn btn-primary' id = 'startBtn'>Start</button>
+  <div class="container">
+    <button class='btn btn-primary' id='startBtn'>Start</button>
   </div>
-
-
-  <!-- questions -->
-  <div class = "container" id="quiz">
-    <div id = timeLeft></div>
-    <div id = currentQuestion></div>
-    <div class = 'question'></div>
-    <div class = 'answerList'></div>
-    </div>
+  <div class="container" id="question">
+    <!-- questions -->
+    <div id=timeLeft></div>
+    <div id=currentQuestion></div>
+    <div class='question'></div>
+    <div class='answerChoices'></div>
 
     <!-- after answer -->
-    <div class = "container" id = "answered">
-      <div id = message></div>
-        <div id = correctedAnswer></div>
-        <div id = gif></div>
-    </div>
-
+    <div id=message></div>
+    <div id=correctedAnswer></div>
 
     <!-- results -->
-    <div class="container" id="results">
-      <div id = finalMessage></div>
-      <div id = totalCorrect></div>
-      <div id = totalIncorrect></div>
-      <div id = unanswered></div>
-      <div id ='startOverBtn'></div>
-      </div>
 
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src = "assets/javascript/app.js"></script>
+      <div id=finalMessage></div>
+      <div id=correct></div>
+      <div id=incorrect></div>
+      <div id=unanswered></div>
+      <div id='startOverBtn'></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
