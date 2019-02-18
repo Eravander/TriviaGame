@@ -159,6 +159,7 @@ function clear() {
 // buttons
 $('#startBtn').on('click', function () {
     $(this).hide();
+    $("#instructions").hide();
     newGame();
 });
 
