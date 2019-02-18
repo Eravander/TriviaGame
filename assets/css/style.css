@@ -4,21 +4,27 @@ body{
     color: antiquewhite;
 }
 
-header{
+#title{
     text-align: center;
-	margin-bottom: 20px;
+    font-size: 40px;
+    background-color: black;
+    color: antiquewhite;
+}
+
+#instructions{
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+    width: 700px;
 }
 
 .btn-primary, .reset{
-	background-color: #313477;
+	background-color: black;
 	color: white;
-	font-family: 'Sigmar One', sans-serif;
 	font-size: 30px;
-	padding: 20px;
-	margin-top: 100px;
 }
 .btn-primary:hover, .reset:hover{
-	background-color: #202364;
+	background-color: crimson;
 }
 
 .container{
@@ -32,8 +38,7 @@ header{
     background-color: black;
 }
 
-.thisChoice:hover{
-	background-color: #202364;
+.choice:hover{
+	background-color: crimson;
 	color: white;
-	padding: 10px;
 }

@@ -13,39 +13,43 @@
 </head>
 
 <body>
-<header>
+<header class="container" id="title">
   Test Your Beer Knowledge
 </header>
-
-  <!-- start screen -->
-  <div class="container">
-    <button class='btn btn-primary' id='startBtn'>Start</button>
+  <div class="container" id="instructions">
+    <p>
+      This quiz will test your beer knowledge. Just click on the answer you think is correct. Try to get all 6!
+    </p>
   </div>
-  <div class="container" id="question">
+  <!-- start screen -->
+  <div class = "container">
+    <button class = 'btn btn-primary' id = 'startBtn'>Start</button>
+  </div>
+  <div class = "container" id="question">
     <!-- questions -->
-    <div id=timeLeft></div>
-    <div id=currentQuestion></div>
-    <div class='question'></div>
-    <div class='answerChoices'></div>
+    <div id = timeLeft></div>
+    <div id = currentQuestion></div>
+    <div class = 'question'></div>
+    <div class = 'answerChoices'></div>
 
     <!-- after answer -->
-    <div id=message></div>
-    <div id=correctedAnswer></div>
+    <div id = message></div>
+    <div id = correctedAnswer></div>
 
     <!-- results -->
 
-      <div id=finalMessage></div>
-      <div id=correct></div>
-      <div id=incorrect></div>
-      <div id=unanswered></div>
+      <div id = finalMessage></div>
+      <div id = correct></div>
+      <div id = incorrect></div>
+      <div id = unanswered></div>
     </div>
 
-    <div class="container">
-        <div id='startOverBtn'></div>
+    <div class = "container">
+        <div id = 'startOverBtn'></div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "assets/javascript/app.js"></script>
 </body>
 
 </html>
