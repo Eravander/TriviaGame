@@ -45,7 +45,7 @@ var messages = {
         correct: "That is correct!",
         incorrect: "Sorry, you did not answer correctly",
         timeOut: "You ran out of time!",
-        finished: "Here are your results"
+        finished: "Here are your results:"
 };
 
 // Game functions
