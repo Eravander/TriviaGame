@@ -113,11 +113,11 @@ function answerPage() {
     } else if ((userChoice != rightAnswerIndex) && (answered == true)) {
         incorrectAnswer++;
         $('#message').html(messages.incorrect);
-        $('#correctedAnswer').html('The correct answer was: ' + rightAnswerText);
+        $('#correctAnswer').html('The correct answer was: ' + rightAnswerText);
     } else {
         unanswered++;
         $('#message').html(messages.timeOut);
-        $('#correctedAnswer').html('The correct answer was: ' + rightAnswerText);
+        $('#correctAnswer').html('The correct answer was: ' + rightAnswerText);
         answered = true;
     }
 
@@ -140,7 +140,7 @@ function scoreboard() {
     $('#startOverBtn').addClass('reset');
     $('#startOverBtn').show();
     $('#startOverBtn').html('Play Again?');
-}
+};
 
 // clears active page
 function clear() {
@@ -148,7 +148,7 @@ function clear() {
     $('.choice').empty();
     $('.question').empty();
     $("#message").empty();
-    $("#correctedAnswer").empty();
+    $("#correctAnswer").empty();
     $('#timeLeft').empty();
     $("#finalMessage").empty();
     $("#correct").empty();
