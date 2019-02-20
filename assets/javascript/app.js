@@ -89,7 +89,6 @@ function countdown() {
     seconds = 15;
     $('#timeLeft').html('<h3>Time Remaining: ' + seconds + '</h3>');
     answered = true;
-    //sets timer countdown
     time = setInterval(timedOut, 1000);
 }
 // Timeout function
