@@ -65,13 +65,14 @@ function newQuestion() {
     // selects and displays new questions and answer
     $("#currentQuestion").html("Question #" + (activeQuestion + 1) + "/" + questions.length);
     $(".question").html("<h2>" + questions[activeQuestion].question + "</h2>")
-    for (var i = 0; i < 4; i++) {
-        var choices = $("<div>");
-        choices.text(questions[activeQuestion].answerChoices[i]);
-        choices.attr({ "data-index": i });
-        choices.addClass("choice");
-        $(".answerChoices").append(choices);
-    }
+
+    questions[activeQuestion].answerChoices.forEach(function(choice, index){
+        $('<div>')
+          .text(choice)
+          .attr('data-index', index)
+          .addClass('choice')
+          .appendTo($('.answerChoices'));
+      });
     countdown();
     // if user selects answer timer stops and answer page is displayed
     $('.choice').on('click', function () {
