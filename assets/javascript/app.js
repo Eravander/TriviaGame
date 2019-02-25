@@ -66,13 +66,14 @@ function newQuestion() {
     $("#currentQuestion").html("Question #" + (activeQuestion + 1) + "/" + questions.length);
     $(".question").html("<h2>" + questions[activeQuestion].question + "</h2>")
 
-    questions[activeQuestion].answerChoices.forEach(function(choice, index){
+    questions[activeQuestion].answerChoices.forEach(function (choice, index) {
         $('<div>')
-          .text(choice)
-          .attr('data-index', index)
-          .addClass('choice')
-          .appendTo($('.answerChoices'));
-      });
+            .text(choice)
+            .attr('data-index', index)
+            .addClass('choice')
+            .appendTo($('.answerChoices'));
+    });
+
     countdown();
     // if user selects answer timer stops and answer page is displayed
     $('.choice').on('click', function () {
